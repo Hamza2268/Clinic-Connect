@@ -270,7 +270,6 @@ The frontend will run on `http://localhost:5173` by default.
 
 ## 🔑 Environment Variables
 
-> ⚠️ **Never commit your `config.env` file to version control.** Make sure `config.env` is listed in your `.gitignore`.
 
 Create a `config.env` file inside the `backend/` directory based on the template below. Replace every placeholder value with your own credentials:
 
