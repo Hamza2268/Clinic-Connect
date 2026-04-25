@@ -1,0 +1,124 @@
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testName {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.assigned {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Meta */
+.meta {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Result */
+.resultBox {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.resultBox img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.cancelBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #fee2e2;
+  color: #991b1b;
+  cursor: pointer;
+}
+
+.completeBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #dcfce7;
+  color: #166534;
+  cursor: pointer;
+}
+
+/* Upload Result */
+.uploadBox {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.uploadBox input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.uploadBox button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #53629e;
+  color: #fff;
+  cursor: pointer;
+}

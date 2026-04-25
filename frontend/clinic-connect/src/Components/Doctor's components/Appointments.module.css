@@ -1,0 +1,299 @@
+.container {
+  padding: 20px;
+}
+
+.pageTitle {
+  font-size: 34xpx;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ---------- VIEW TOGGLE (updated to match image) ---------- */
+.viewToggle {
+  display: flex;
+  background: #f2f4f7;
+  padding: 6px;
+  border-radius: 40px;
+  width: fit-content;
+  gap: 6px;
+}
+
+.viewBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 500;
+  color: #6b7280;
+  transition: 0.25s;
+}
+
+.viewBtn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.activeView {
+  background: white;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 22px !important;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterBtn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  cursor: pointer;
+}
+
+.activeFilter {
+  background: #53629e;
+  color: white;
+  border-color: #53629e;
+}
+
+/* LIST */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Top row */
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patientInfo {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background: #e8edff;
+  color: #53629e;
+  font-weight: bold;
+  padding: 16px 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.patientName {
+  margin: 0;
+  font-size: 20px;
+}
+
+.dateText {
+  font-size: 14px;
+  color: #6a6a6a;
+  margin-bottom: 0;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* STATUS COLORS */
+.scheduled {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+.inprogress {
+  background: #fef3c7;
+  color: #92400e;
+}
+.missed {
+  background: #ffe1e1;
+  color: #c12e2e;
+}
+.completed {
+  background: #e0ffe8;
+  color: #0f9d44;
+}
+.cancelled {
+  background: #ececec;
+  color: #6d6d6d;
+}
+
+/* Divider */
+.divider {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background: #cdcbcb;
+  margin-top: 10px;
+}
+
+/* Symptoms */
+.symptomsSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.symptomsLabel {
+  color: #6a6a6a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.symptomsText {
+  margin-top: 4px;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.cancelBtn {
+  background: #ffdddd;
+  color: #d9534f;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.missedBtn {
+  background: #ffe1e1;
+  color: #c12e2e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.completeBtn {
+  background: #e0ffe8;
+  color: #0f9d44;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.emptyText {
+  font-size: 28px;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.AddprescriptionBtn {
+  background: #e8edff;
+  color: #53629e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.pageBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #f5f5f5;
+  border-color: #53629e;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pageNumber {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageNumber:hover {
+  background: #f5f5f5;
+  border-color: #e8edff;
+}
+
+.activePage {
+  background: #e8edff !important;
+  color: #53629e !important;
+  border-color: #e8edff !important;
+}
+
+.resultsInfo {
+  text-align: center;
+  color: #666;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 100px;
+}
+.emptyState p {
+  margin: 0;
+}

@@ -1,0 +1,60 @@
+.LoginPage {
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  background-color: var(--background);
+}
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #53629e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.loginButton:hover {
+  background-color: #53629e;
+}
+
+.input:focus-within > label {
+  /* opacity: 0.65; */
+  transform: scale(0.85) translateY(-1.3rem) translateX(0.15rem);
+}
+
+.eyeButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 50px;
+}
+
+/* Ensure the input wrapper is positioned so the absolute button aligns correctly */

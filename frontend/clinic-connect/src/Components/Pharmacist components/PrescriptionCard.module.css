@@ -1,0 +1,95 @@
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.patient {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Status colors */
+.requested {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.ready_for_pickup {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.completed {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.doctor,
+.date {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.medicineList {
+  margin-top: 12px;
+}
+
+.medicine {
+  font-size: 14px;
+}
+
+/* Actions */
+.actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.approve,
+.reject,
+.dispense {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.approve {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.reject {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.dispense {
+  background: #e0e7ff;
+  color: #3730a3;
+}

@@ -1,0 +1,84 @@
+.container {
+  padding: 24px;
+}
+
+.pageTitle {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* .filterBtn:hover {
+  background: #f3f6fa;
+} */
+
+.active {
+  background: #53629e;
+  color: #fff;
+  border-color: #53629e;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.pagination button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.noResults {
+  text-align: center;
+  margin-right: 10px;
+  color: #666;
+  font-size: 20px;
+}
+.noResultsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: #666;
+  font-size: 20px;
+}

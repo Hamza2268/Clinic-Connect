@@ -1,0 +1,246 @@
+.patientspagecontainer {
+  padding: 20px;
+}
+
+.pageheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 12px;
+}
+.pagetitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.searchcontainer {
+  margin-bottom: 20px;
+}
+
+.searchinput {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 15px;
+}
+
+.patientslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.patientcard {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.patientname {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.viewbtn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #53629e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.viewbtn:hover {
+  background: #53629e;
+}
+
+.emptytext {
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Card wrapper */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  animation: slideUp 0.4s ease forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Content alignment */
+.cardContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Left text */
+.label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.name {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtext {
+  font-size: 13px;
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.value {
+  color: #111827;
+  font-weight: 600;
+}
+
+.titlewrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Right icon box */
+.iconBox {
+  background: #edf7fd;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  color: #a8aed1;
+}
+
+/* Button */
+.viewBtn {
+  margin-top: 14px;
+  padding: 8px 0;
+  background: transparent;
+  border: none;
+  color: #53629e;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.viewBtn:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/*/////////////*/
+
+/* Add this at the bottom of your CSS or near .card definition */
+.card {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  animation: slideUp 0.4s ease forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* ADD THIS */
+  overflow: hidden; /* keeps circle inside */
+}
+
+/* Light blue circle in background */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px; /* size of circle */
+  height: 140px;
+  background: rgba(173, 216, 230, 0.2); /* light blue with opacity */
+  border-radius: 50%;
+  transform: translate(20%, -20%);
+  z-index: 0; /* behind card content */
+}
+
+/* Ensure content is above the circle */
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.totalpatients {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #53629e;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.pageBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #f5f5f5;
+  border-color: #53629e;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

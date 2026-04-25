@@ -1,0 +1,370 @@
+/* .container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+  font-size: 15px;
+}
+
+.timeInput {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 15px;
+}
+
+.saveBtn {
+  margin-top: 18px;
+  padding: 12px 24px;
+  background: #2b5eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.saveBtn:disabled {
+  background: #9fb5ff;
+  cursor: not-allowed;
+}
+
+.saveBtn:hover:not(:disabled) {
+  background: #1f49cc;
+}
+
+.error {
+  background: #ffe1e1;
+  color: #b40000;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+  */
+:root {
+  /* Light Theme Palette */
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #1b1e24;
+
+  --accent: #53629e;
+  --success: #2db76d;
+  --danger: #ff6b6b;
+
+  --border: rgba(0, 0, 0, 0.08);
+
+  --glass: rgba(0, 0, 0, 0.03);
+  --glass-2: rgba(0, 0, 0, 0.04);
+}
+
+/* Root container */
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnPrimary {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(124, 92, 255, 0.25);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error box */
+.errorBox {
+  background: rgba(255, 107, 107, 0.12);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #b63434;
+  font-size: 14px;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+}
+
+/* Table */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  text-align: left;
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.thDay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: var(--muted);
+}
+
+/* Table rows */
+.row {
+  transition: background 0.2s ease;
+}
+
+.row:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.rowConflict {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+/* Table cells */
+.table td {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.tdDay {
+  width: 200px;
+}
+
+.dayName {
+  font-weight: 600;
+}
+
+/* Inputs */
+.timeInput {
+  width: 130px;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Badges */
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badgeSuccess {
+  background: rgba(45, 183, 109, 0.15);
+  color: #157a45;
+  border: 1px solid rgba(45, 183, 109, 0.3);
+}
+
+.badgeDanger {
+  background: rgba(255, 107, 107, 0.18);
+  color: #b63434;
+  border: 1px solid rgba(255, 107, 107, 0.32);
+}
+
+.badgeMuted {
+  background: #f1f3f7;
+  color: var(--muted);
+  border: 1px solid #e2e6ee;
+}
+
+/* Conflict card */
+.conflictCard {
+  padding: 16px;
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  border-radius: 14px;
+  background: rgba(255, 107, 107, 0.08);
+}
+
+.conflictInner {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.conflictIcon {
+  background: rgba(255, 107, 107, 0.15);
+  padding: 8px;
+  border-radius: 10px;
+  color: #b63434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conflictTitle {
+  font-weight: 700;
+  color: #b63434;
+}
+
+.conflictList {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text);
+  padding-left: 18px;
+}
+
+/* Stats Section */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(124, 92, 255, 0.12);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statIconInner {
+  font-size: 22px; /* controls MUI icon size */
+  color: inherit;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Mobile tweaks */
+@media (max-width: 700px) {
+  .table {
+    min-width: 600px;
+  }
+}

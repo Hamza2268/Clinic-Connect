@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Fredoka:wght@300..700&family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+:root {
+  /* ============================
+     MAIN COLOR PALETTE
+     ============================ */
+
+  --background: #edf7fd;
+
+  /* ============================
+     GRADIENT COLORS
+     ============================ */
+
+  /* Background gradient */
+  --gradient-start: #76bfbb;
+  --gradient-end: #679ad3;
+
+  --shadow-soft: 0 4px 24px -2px rgba(16, 24, 40, 0.08);
+  --shadow-medium: 0 8px 32px -4px rgba(16, 24, 40, 0.12);
+  --shadow-glass: 0 8px 32px 0 rgba(59, 130, 246, 0.08);
+}
+* {
+  font-family: Alan Sans, Outfit;
+}
+
+body {
+  /* background-color: var(--background); */
+  font-family: Alan Sans, Outfit;
+  /* min-height: 100vh; */
+  /* text-align: center; */
+  position: relative;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* In your global CSS file or add to tailwind.config.js */
+/* @layer utilities { */
+.text-foreground {
+  color: #1f2937;
+}
+
+.text-muted-foreground {
+  color: #6b7280;
+}
+
+.text-primary {
+  color: #3b82f6;
+}
+
+.bg-secondary {
+  background-color: #f3f4f6;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+/* } */

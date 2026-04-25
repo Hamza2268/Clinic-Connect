@@ -1,0 +1,426 @@
+/* .main { */
+/* min-height: 100vh; */
+/* transform: scale(1.12); */
+/* overflow-x: hidden; */
+/* box-sizing: border-box; */
+
+/* Add this - ensures container has full viewport height */
+/* margin: 0;  */
+/* Add this */
+/* padding: 0; */
+/* } */
+html {
+  overflow-x: hidden;
+}
+.main {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  transform-origin: top center;
+  background-color: var(--background);
+}
+
+/* @media (min-width: 1920px) {
+  .main {
+    transform: scale(1.12);
+    width: calc(100% / 1.12);
+  }
+} */
+
+.backgroundWave {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  width: 100%;
+  /* height: 100vh; */
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  /* -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%); */
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigationBar {
+  font-family: Alan Sans, Outfit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
+  height: 50px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 30px 10px;
+  margin: 5px 4px;
+}
+
+.navigationItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-right: 20px;
+  /* margin-right: 100px; */
+  font-size: 30px;
+}
+
+.navigationItems button {
+  font-size: 18px;
+  color: black;
+  font-family: Alan Sans, Outfit;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  background: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navigationItemsSpan {
+  background: linear-gradient(
+    90deg,
+    #53629e 0%,
+    #4a90e2 33%,
+    #5da5c8 60%,
+    #6eb8ae 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline;
+  font-size: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.logoIcon {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 20px;
+}
+
+.logoText {
+  font-family: Alan Sans, Outfit;
+  font-size: 26px;
+}
+
+.logoIcon {
+  margin-right: 18px;
+}
+
+.HeroSection {
+  /* margin-top: 50px; */
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.heroText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.heroTextTitle {
+  font-size: 70px;
+  width: 300px;
+  text-align: center;
+  font-family: Fredoka, Alan Sans, Outfit;
+  font-weight: 500;
+}
+.heroTextDes {
+  width: 500px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.heroPic img {
+  height: 350px;
+  width: 350px;
+  margin-right: 110px;
+  padding-top: 10px;
+}
+
+/* rolessss*/
+.Roles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: white; */
+  margin-top: 100px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  scroll-margin-top: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.RolesTitle {
+  font-size: 50px;
+  width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.RolesTypes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.RolesCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 14px 10px;
+
+  text-align: left;
+}
+
+.RolesCardTitle {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.RolesCardText,
+li {
+  font-weight: 350;
+  font-size: 15px;
+}
+
+.RolesLogo {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 7px 9px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+}
+
+/* steps section*/
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 20px 0;
+}
+.stepsTitle {
+  width: 300px;
+  font-size: 50px;
+  font-weight: 500;
+}
+.stepsContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stepsTextTitle {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.stepsTextDescribtion {
+  font-weight: 350;
+  font-size: 15px;
+}
+
+.stepsTextSpan {
+  color: #53629e;
+  font-size: 23px;
+}
+.stepsTitleSpan {
+  background: linear-gradient(90deg, #4a90e2 0%, #5da5c8 50%, #6eb8ae 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline;
+}
+
+/*  Features section*/
+.Features {
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  scroll-margin-top: 80px;
+}
+.FeaturesTitle {
+  font-size: 50px;
+  width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.FeaturesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.FeaturesGridCard {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: left;
+  padding: 10px;
+}
+
+.FeaturesGridCardTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #53629e;
+}
+
+/* Call to action section*/
+.CallToAction {
+  /* background-color: #53629e; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+
+.CallToActionTitle {
+  font-size: 50px;
+  width: 900px;
+  text-align: center;
+  margin: 0px 0 0 0;
+}
+
+.CallToActionDescribtion {
+  font-size: 20px;
+}
+
+.CallToActionBtn {
+  border: none;
+  background: linear-gradient(90deg, #4a90e2 0%, #5da5c8 50%, #6eb8ae 100%);
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.CallToActionBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1366px) {
+  .main {
+    transform: scale(1.1);
+    width: calc(100%);
+    /* color: red; */
+  }
+
+  .navigationBar {
+    padding: 30px 0px;
+    margin: 5px 10px;
+  }
+
+  .FeaturesGridCard {
+    transform: scale(1.2);
+    margin: 20px 40px;
+  }
+
+  .RolesCard {
+    transform: scale(1.15);
+    margin: 20px 10px;
+  }
+
+  .steps {
+    transform: scale(1.1);
+    margin: 20px 0px;
+    justify-content: center;
+  }
+
+  .stepsTitle {
+    width: 400px;
+    font-size: 60px;
+    font-weight: 560;
+    margin-right: 50px;
+  }
+
+  .CallToAction {
+    transform: scale(1.15);
+    margin: 50px 0px 20px 0;
+  }
+
+  .CallToActionTitle {
+    width: 900px;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .CallToActionDescribtion {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}

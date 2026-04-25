@@ -1,0 +1,262 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Back Button */
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Profile Card */
+.profileCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: top;
+  gap: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #53629e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.profileInfo h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.email {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.phone {
+  font-size: 14px;
+  color: #374151;
+}
+
+.profileInfo p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.contactInfo {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.contactInfo div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Table Card */
+.tableCard {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.tableCard h2 {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 18px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+}
+
+.meds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.meds span {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.status {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.empty {
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+}
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 16px 0;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.statusCompleted {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.statusPending {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.statusInProgress {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.resultAvailable {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.resultPending {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #f3f4f6;
+  color: #6b7280;
+}
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 16px 0;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.statusCompleted {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.statusPending {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.resultLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.resultLink:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.resultText {
+  color: #374151;
+  font-size: 13px;
+}
+
+.pendingText {
+  color: #9ca3af;
+  font-size: 13px;
+  font-style: italic;
+}

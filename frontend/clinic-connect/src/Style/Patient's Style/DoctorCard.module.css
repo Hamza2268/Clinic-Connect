@@ -1,0 +1,228 @@
+.PharmacyOwner {
+  display: flex;
+  align-items: center;
+  color: #5a78c9;
+  font-weight: 500;
+}
+/* Doctor Card */
+.doctorCard {
+  background: #ffffff;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  /* border: 1px solid rgba(0, 0, 0, 0.06); */
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+}
+
+.doctorCard:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.cardContent {
+  padding: 20px;
+  /* background-color: #ffffff; */
+}
+
+/* Card Body */
+.cardBody {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Avatar */
+.avatarContainer {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Info Container */
+.infoContainer {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.doctorInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.doctorName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.specialty {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #5a78c9;
+  margin: 0;
+}
+
+/* Status Chips */
+.availableChip {
+  background: #76bfbb;
+  color: white;
+  font-weight: 500;
+}
+
+.busyChip {
+  background: rgba(0, 0, 0, 0.1);
+  color: #666;
+  font-weight: 500;
+}
+
+/* Rating Row */
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  color: #f59e0b;
+  fill: #f59e0b;
+}
+
+.rating {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.reviewCount {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Details Row */
+.detailsRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.detailIcon {
+  width: 16px;
+  height: 16px;
+  color: #666;
+}
+
+/* Next Available */
+.nextAvailable {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.calendarIcon {
+  width: 16px;
+  height: 16px;
+  color: #5a78c9;
+}
+
+.nextLabel {
+  color: #666;
+}
+
+.nextDate {
+  color: #5a78c9;
+  font-weight: 500;
+}
+
+/* Actions Row */
+.actionsRow {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.outlineButton {
+  flex: 1;
+  border-color: rgba(59, 130, 246, 0.3);
+  color: hsl(225, 50%, 55%);
+  text-transform: none;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.outlineButton:hover {
+  border-color: hsl(225, 50%, 55%);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.primaryButton {
+  flex: 1;
+  background: hsl(225, 50%, 55%);
+  color: white;
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardBody {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .doctorName {
+    font-size: 1rem;
+  }
+
+  .actionsRow {
+    flex-direction: column;
+  }
+}

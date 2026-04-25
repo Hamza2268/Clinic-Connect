@@ -1,0 +1,218 @@
+/* Profile Side Bar */
+/* Sidebar Container */
+.sidebar {
+  width: 288px;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Expanded / Collapsed variants */
+.sidebarExpanded {
+  width: 288px;
+  transition: width 0.2s ease;
+}
+
+.sidebarCollapsed {
+  width: 72px;
+  transition: width 0.2s ease;
+  align-items: center;
+}
+
+/* When collapsed, hide labels and center icons */
+.sidebarCollapsed .navLabel,
+.sidebarCollapsed .actionLabel,
+.sidebarCollapsed .logoText,
+.sidebarCollapsed .userName {
+  display: none;
+}
+
+.sidebarCollapsed .navItem {
+  justify-content: center;
+  padding: 12px 8px;
+}
+
+.sidebarCollapsed .navIcon,
+.sidebarCollapsed .actionIcon {
+  margin: 0;
+}
+
+.sidebarCollapsed .bottomActions {
+  align-items: center;
+}
+
+.sidebarCollapsed .userInfo {
+  padding: 16px 8px;
+}
+
+.sidebarCollapsed .userInfoContent {
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.collapsedRoleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* User Info Section */
+.userInfo {
+  padding: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.userInfoContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.roleIconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.roleIcon {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.userDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.userName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.userRole {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Navigation Section */
+.navigation {
+  flex: 1;
+  padding: 16px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.navItem:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+}
+
+.navItemActive {
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navItemActive:hover {
+  background-color: transparent;
+}
+
+.navIcon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.navItem:hover .navIcon {
+  transform: scale(1.1);
+}
+
+.navItemActive .navIcon {
+  color: white;
+}
+
+.navLabel {
+  font-weight: 500;
+}
+
+/* Bottom Actions */
+.bottomActions {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.actionButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.actionButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+}
+
+.logoutButton {
+  color: rgba(220, 38, 38, 0.8);
+}
+
+.logoutButton:hover {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.actionIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.actionLabel {
+  font-weight: 500;
+}

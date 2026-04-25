@@ -1,0 +1,202 @@
+/* Signup.module.css */
+
+.container {
+  min-height: 100vh;
+  background-color: #edf7fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: Alan Sans, Outfit;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.logoIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.roleButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: white;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border-color: #53629e;
+}
+
+.selectedBtn {
+  background-color: #5da5c8;
+  color: white;
+  border-color: #5da5c8;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+}
+
+.formGroup label,
+.formGroupFull label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroupFull input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus,
+.formGroupFull input:focus {
+  border-color: #53629e;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.genderContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.genderContainer .btn {
+  flex: 1;
+}
+
+.confirmBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #53629e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.confirmBtn:hover:not(:disabled) {
+  background-color: #53629e;
+}
+
+.confirmBtn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroupFull {
+    grid-column: 1;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .logoText {
+    font-size: 1.75rem;
+  }
+}
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+}

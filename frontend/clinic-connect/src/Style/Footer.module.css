@@ -1,0 +1,33 @@
+footer {
+  background-color: #dce8ea;
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+}
+.footerTitle {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footerText {
+  font-weight: 350;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  /* background-color: var(--background); */
+  font-family: Alan Sans, Outfit;
+  min-height: 100vh;
+}

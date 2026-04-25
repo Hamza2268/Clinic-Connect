@@ -1,0 +1,139 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Back Button */
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Profile Card */
+.profileCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: top;
+  gap: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #53629e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.profileInfo h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.email {
+  font-size: 20px;
+  color: #6b7280;
+}
+
+.phone {
+  font-size: 20px;
+  color: #374151;
+}
+
+.profileInfo p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.contactInfo {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.contactInfo div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Table Card */
+.tableCard {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.tableCard h2 {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 18px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+}
+
+.meds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.meds span {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.status {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.empty {
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+}

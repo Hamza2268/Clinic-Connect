@@ -1,0 +1,190 @@
+.container {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 60%;
+}
+
+.summaryCard {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 35%;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.testItem {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.testItem:hover {
+  border-color: #53629e;
+}
+
+.activeTest {
+  border-color: #53629e;
+  background: #ebefff;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+}
+
+.testsList {
+  margin-top: 8px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.testsList li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkIcon {
+  color: #0f9d44;
+}
+
+.submitBtn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: #53629e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.icon {
+  color: #53629e;
+}
+
+.noResults {
+  color: #7a7a7a;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/*////////////////////////idk//////////////////////*/
+.selectedTestsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selectedTestItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.selectedTestItem:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.selectedTestItem .checkIcon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.selectedTestItem span {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+}
+
+.removeTestBtn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.removeTestBtn:hover {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.noTests {
+  text-align: center;
+  color: #9ca3af;
+  padding: 24px;
+  font-size: 14px;
+}
+
+.summaryTests {
+  margin-top: 12px;
+}
+
+.submitContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

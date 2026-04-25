@@ -1,0 +1,148 @@
+.calendarContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.weekNav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.navBtn,
+.todayBtn {
+  background: white;
+  border: 1px solid #c9c9c9;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navBtn:hover {
+  background: #f5f5f5;
+}
+
+.todayBtn {
+  background: #53629e;
+  color: white;
+  border-color: #53629e;
+}
+
+.todayBtn:hover {
+  background: #465285;
+}
+
+.todayBtnDisabled {
+  background: #a0a0a0;
+  color: white;
+  border: 1px solid #a0a0a0;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: not-allowed;
+  font-size: 14px;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  margin-bottom: 10px;
+}
+
+.dayHeader {
+  font-weight: 600;
+  text-align: center;
+}
+
+.dateNumber {
+  font-size: 12px;
+  color: #666;
+}
+
+.body {
+  display: flex;
+}
+
+.timeColumn {
+  width: 100px;
+  border-right: 1px solid #eee;
+}
+
+.timeSlot {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 12px;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  flex: 1;
+  position: relative;
+  height: 660px;
+}
+
+.dayColumn {
+  position: relative;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(60px * 11);
+}
+
+.hourCell {
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.apptCard {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: black;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Status colors */
+.scheduled {
+  background: #e1edff;
+  border-color: #bcd4ff;
+}
+
+.inprogress {
+  background: #fff4d6;
+  border-color: #ffe2a5;
+}
+
+.missed {
+  background: #ffe1e1;
+  border-color: #ffb5b5;
+}
+
+.completed {
+  background: #e0ffe8;
+  border-color: #b4f0c8;
+}
+
+.cancelled {
+  background: #f2f2f2;
+  border-color: #dadada;
+}
+
+.apptType {
+  color: #666;
+  font-size: 11px;
+}
